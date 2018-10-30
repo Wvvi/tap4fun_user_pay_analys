@@ -27,9 +27,7 @@ train_df=pd.read_csv('tap4fun_compitition_data/tap_fun_train.csv',sep=',',usecol
 train_df.head()
 ```
 
-![train_df](F:\gitrepository\tap4fun_user_pay_analys\pictures\train_df.png)
-
-
+![](pictures/train_df.png)
 
 
 
@@ -55,7 +53,7 @@ train_df=train_df.join(price_tag_dummies)
 train_df.head()
 ```
 
-![train_dummies](F:\gitrepository\tap4fun_user_pay_analys\pictures\train_dummies.png)
+![](pictures/train_dummies.png)
 
 
 
@@ -76,7 +74,9 @@ pay_df.loc['total',:]=pay_df.apply(np.sum,axis=0).values
 pay_df
 ```
 
-![pay_df](F:\gitrepository\tap4fun_user_pay_analys\pictures\pay_df.png)
+![](pictures/pay_df.png)
+
+
 
 * 通过分析训练集的付费情况可以看出,总人数224万人,付费人数45988,比例只有2%,比重非常的小,前7天付费的占总人数0.2%,后45天付费的占总人数的1.8%
 
@@ -95,7 +95,7 @@ pay_new_df.loc['total',:]=pay_new_df.apply(np.sum,axis=0).values
 pay_new_df
 ```
 
-![pay_new_df](F:\gitrepository\tap4fun_user_pay_analys\pictures\pay_new_df.png)
+![](pictures/pay_new_df.png)
 
 
 
